@@ -1,0 +1,75 @@
+:root {
+  --bg: #0f1115;
+  --card: #16191f;
+  --border: #2a2d35;
+  --text: #e2e4e8;
+  --muted: #9ca3af;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 0 1rem;
+}
+
+.site-header {
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.site-header h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.2rem; }
+.role { color: var(--accent); font-weight: 500; margin-bottom: 0.8rem; }
+.contact-bar { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; color: var(--muted); font-size: 0.9rem; margin-bottom: 1rem; }
+.contact-bar a { color: var(--accent); text-decoration: none; }
+.contact-bar a:hover { text-decoration: underline; }
+
+.lang-toggle { margin-top: 1rem; }
+.lang-toggle button {
+  background: var(--card); border: 1px solid var(--border); color: var(--muted);
+  padding: 0.4rem 0.9rem; cursor: pointer; border-radius: 6px; font-weight: 500;
+  transition: 0.2s;
+}
+.lang-toggle button.active, .lang-toggle button:hover { background: var(--accent); color: white; border-color: var(--accent); }
+
+main { max-width: 900px; margin: 2rem auto; }
+section { margin-bottom: 2.5rem; }
+h2 { font-size: 1.5rem; margin-bottom: 1rem; border-left: 3px solid var(--accent); padding-left: 0.8rem; }
+h3 { font-size: 1.1rem; margin-bottom: 0.2rem; }
+.period { color: var(--muted); font-size: 0.9rem; margin-bottom: 0.5rem; }
+ul { margin: 0.5rem 0 1rem 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+.job, .project-card, .edu { background: var(--card); padding: 1.2rem; border-radius: 8px; margin-bottom: 1.2rem; border: 1px solid var(--border); }
+.job span { color: var(--accent); font-weight: 400; }
+
+.github-btn {
+  display: inline-block; margin-top: 0.5rem; background: var(--accent); color: white;
+  padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 500;
+  transition: background 0.2s;
+}
+.github-btn:hover { background: var(--accent-hover); }
+
+.site-footer {
+  max-width: 900px; margin: 3rem auto 4rem; text-align: center; padding-top: 1.5rem;
+  border-top: 1px solid var(--border); color: var(--muted); font-size: 0.9rem;
+}
+.download-btn {
+  display: inline-block; margin: 0 0.5rem 0.5rem; padding: 0.6rem 1.2rem;
+  background: var(--card); border: 1px solid var(--border); color: var(--text);
+  text-decoration: none; border-radius: 6px; font-weight: 500; transition: 0.2s;
+}
+.download-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 1.8rem; }
+  .contact-bar { flex-direction: column; align-items: center; }
+  main { padding: 0 0.5rem; }
+}

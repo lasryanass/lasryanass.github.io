@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anass Lasry | SRE / DevOps Engineer</title>
+  <meta name="description" content="Resume & Portfolio of Anass Lasry, SRE/DevOps Engineer specializing in observability, CI/CD automation, and cloud infrastructure.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Anass Lasry</h1>
+    <p class="role">SRE / DevOps Engineer</p>
+    <div class="contact-bar">
+      <span>📍 Paris, France</span>
+      <a href="tel:+33744409031">📞 +33 7 44 40 90 31</a>
+      <a href="mailto:anasslasrypro@gmail.com">✉️ anasslasrypro@gmail.com</a>
+      <a href="https://linkedin.com/in/anass-lasry" target="_blank" rel="noopener">💼 LinkedIn</a>
+    </div>
+    <div class="lang-toggle">
+      <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+      <button id="btn-fr" onclick="setLang('fr')">Français</button>
+    </div>
+  </header>
+
+  <main id="content-en">
+    <section class="profile">
+      <h2>Profile</h2>
+      <p>SRE/DevOps Engineer with experience in observability, CI/CD automation, and cloud infrastructure (AWS, Kubernetes, GCP). Having contributed to production environments at Tenable and Worldline, I am looking for a position to deepen my expertise in large-scale system reliability.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="job">
+        <h3>Cloud & DevOps Engineer <span>@ Worldline</span></h3>
+        <p class="period">04/2025 – 09/2025 | Lille, France</p>
+        <p><strong>Project:</strong> Capture Developers' Metrics Usage/Cloud</p>
+        <ul>
+          <li>Standardized development workflows and improved observability by making software metrics (GitLab, SonarQube) accessible and reliable for managers within Microsoft Teams.</li>
+          <li>Developed automated ETL pipelines to collect and process CI/CD and code quality metrics. Containerized jobs into Docker images and scheduled as CronJobs on OpenShift (Kubernetes).</li>
+          <li>Deployed a reusable MongoDB component via Helm in a private cloud. Optimized data processing to handle 6 months of production data in 5 minutes using bulk writes & aggregation pipelines.</li>
+          <li>Designed interactive Power BI dashboards integrated into Teams. Ensured full GDPR & internal security compliance.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Site Reliability Engineer <span>@ Tenable</span></h3>
+        <p class="period">04/2024 – 09/2024 | Paris, France</p>
+        <p><strong>Project:</strong> Monitoring and Automation of NGINX Surveillance Stack</p>
+        <ul>
+          <li>Built comprehensive Grafana dashboards for NGINX log monitoring via Loki. Reduced Mean-Time-To-Awareness (MTTA) by 15 minutes through proactive alerting.</li>
+          <li>Automated test report generation & Jira updates via Azure Pipelines, accelerating release cycles by 30%.</li>
+          <li>Reduced component installation time to 1/3 by automating deployment tasks. Developed Bash scripts for repetitive operational tasks within Azure.</li>
+          <li>Worked in Agile (weekly cycles). Streamlined communication by eliminating redundant meetings through automated test reporting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project">
+      <h2>Open Source Project</h2>
+      <div class="project-card">
+        <h3>AutoK8S</h3>
+        <p class="period">01/2026 – Present</p>
+        <ul>
+          <li>Automatic provisioning of cloud infrastructure (GCP, AWS, Azure) when no target infrastructure is detected.</li>
+          <li>Automation of Kubernetes installation and updates on a given infrastructure.</li>
+        </ul>
+        <a id="autok8s-link" href="#" target="_blank" class="github-btn">🔗 View on GitHub (Coming Soon)</a>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certified Kubernetes Administrator (CKA)</li>
+        <li>AWS Certified Solutions Architect – Associate (SAA-C03) — Scheduled May 2026</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <p><strong>Tech:</strong> Python, Go, Shell | AWS, GCP, Azure, Docker, Kubernetes, OpenShift, Terraform, Ansible, Helm | Prometheus, Grafana, Loki, GitLab CI/CD, Jenkins, SonarQube | MongoDB, Linux, OpenStack</p>
+      <p><strong>Management:</strong> Jira, Agile, Scrum, Kanban</p>
+      <p><strong>Languages:</strong> English (IELTS 7.5), French (C1), Arabic (native), German (A2)</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="edu">
+        <h3>MEng in Software Engineering (Double Degree)</h3>
+        <p>IMT Atlantique (Télécom Bretagne) | Rennes, France | 2023 – 2025</p>
+      </div>
+      <div class="edu">
+        <h3>MEng in Software Engineering</h3>
+        <p>Institut National des Postes et Télécommunications | Rabat, Maroc | 2021 – 2024</p>
+      </div>
+    </section>
+  </main>
+
+  <main id="content-fr" style="display:none;">
+    <section class="profile">
+      <h2>Profil</h2>
+      <p>Ingénieur SRE/DevOps avec expérience en observabilité, automatisation CI/CD et infrastructure cloud (AWS, Kubernetes, GCP). Ayant contribué à des environnements de production chez Tenable et Worldline, je cherche un poste pour approfondir ma maîtrise de la fiabilité des systèmes à grande échelle.</p>
+    </section>
+
+    <section class="experience">
+      <h2>Expérience</h2>
+      <div class="job">
+        <h3>Ingénieur Cloud & DevOps <span>@ Worldline</span></h3>
+        <p class="period">04/2025 – 09/2025 | Lille, France</p>
+        <p><strong>Projet :</strong> Capture Developers' Metrics Usage/Cloud</p>
+        <ul>
+          <li>Standardisation des flux de travail et amélioration de l'observabilité en rendant les métriques logicielles (GitLab, SonarQube) accessibles et fiables pour les managers via Microsoft Teams.</li>
+          <li>Développement de pipelines ETL automatisés en Python. Conteneurisation avec Docker et planification via CronJobs sur OpenShift (Kubernetes).</li>
+          <li>Déploiement d'un composant MongoDB réutilisable via Helm dans un cloud privé. Optimisation du traitement : 6 mois de données traités en 5 min grâce aux écritures en vrac et pipelines d'agrégation.</li>
+          <li>Conception de tableaux de bord Power BI interactifs intégrés à Teams. Garantie de la conformité RGPD et sécurité interne.</li>
+        </ul>
+      </div>
+      <div class="job">
+        <h3>Ingénieur SRE <span>@ Tenable</span></h3>
+        <p class="period">04/2024 – 09/2024 | Paris, France</p>
+        <p><strong>Projet :</strong> Supervision et Automatisation de la stack NGINX</p>
+        <ul>
+          <li>Création de dashboards Grafana pour la supervision des logs NGINX via Loki. Réduction du MTTA de 15 min via des alertes proactives.</li>
+          <li>Automatisation des rapports de test et mises à jour Jira via Azure Pipelines, accélérant les cycles de release de 30 %.</li>
+          <li>Réduction du temps d'installation à 1/3 par automatisation des déploiements. Développement de scripts Bash pour tâches répétitives sur Azure.</li>
+          <li>Évolution en Agile (cycles hebdomadaires). Fluidification des communications en supprimant les réunions redondantes via le reporting automatisé.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project">
+      <h2>Projet Open Source</h2>
+      <div class="project-card">
+        <h3>AutoK8S</h3>
+        <p class="period">01/2026 – Présent</p>
+        <ul>
+          <li>Provisionnement automatique de l'infrastructure cloud (GCP, AWS, Azure) en cas d'absence d'infra cible détectée.</li>
+          <li>Automatisation de l’installation et de la mise à jour de Kubernetes sur une infrastructure donnée.</li>
+        </ul>
+        <a id="autok8s-link-fr" href="#" target="_blank" class="github-btn">🔗 Voir sur GitHub (Bientôt)</a>
+      </div>
+    </section>
+
+    <section class="certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Certified Kubernetes Administrator (CKA)</li>
+        <li>AWS Certified Solutions Architect – Associate (SAA-C03) — Prévue pour mai 2026</li>
+      </ul>
+    </section>
+
+    <section class="skills">
+      <h2>Compétences</h2>
+      <p><strong>Tech :</strong> Python, Go, Shell | AWS, GCP, Azure, Docker, Kubernetes, OpenShift, Terraform, Ansible, Helm | Prometheus, Grafana, Loki, GitLab CI/CD, Jenkins, SonarQube | MongoDB, Linux, OpenStack</p>
+      <p><strong>Gestion :</strong> Jira, Agile, Scrum, Kanban</p>
+      <p><strong>Langues :</strong> Anglais (IELTS 7.5), Français (C1), Arabe (natif), Allemand (A2)</p>
+    </section>
+
+    <section class="education">
+      <h2>Formation</h2>
+      <div class="edu">
+        <h3>Diplôme d’ingénieur en Génie Logiciel (Double Diplôme)</h3>
+        <p>IMT Atlantique (Télécom Bretagne) | Rennes, France | 2023 – 2025</p>
+      </div>
+      <div class="edu">
+        <h3>Diplôme d’ingénieur en Génie Logiciel</h3>
+        <p>Institut National des Postes et Télécommunications | Rabat, Maroc | 2021 – 2024</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="resume_en.pdf" download class="download-btn">📄 Download Resume (EN)</a>
+    <a href="resume_fr.pdf" download class="download-btn">📄 Télécharger le CV (FR)</a>
+    <p class="copyright">© 2026 Anass Lasry. Built with ❤️ & static HTML/CSS/JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
