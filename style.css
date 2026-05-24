@@ -31,15 +31,16 @@ body {
 .contact-bar a { color: var(--accent); text-decoration: none; }
 .contact-bar a:hover { text-decoration: underline; }
 
-.lang-toggle { margin-top: 1rem; }
+.lang-toggle { margin-top: 1rem; display: flex; justify-content: center; gap: 0.5rem; }
 .lang-toggle button {
   background: var(--card); border: 1px solid var(--border); color: var(--muted);
-  padding: 0.4rem 0.8rem; cursor: pointer; border-radius: 6px; font-weight: 500;
-  transition: 0.2s; font-size: 1.1rem; line-height: 1.2;
+  padding: 0.3rem 0.7rem; cursor: pointer; border-radius: 6px; font-weight: 500;
+  transition: 0.2s; display: flex; align-items: center; justify-content: center;
 }
 .lang-toggle button.active, .lang-toggle button:hover { 
   background: var(--accent); color: white; border-color: var(--accent); 
 }
+.flag-icon { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; }
 
 main { max-width: 900px; margin: 2rem auto; }
 section { margin-bottom: 2.5rem; }
@@ -86,9 +87,23 @@ code {
 }
 
 .tech-tags { 
-  color: var(--accent); 
-  font-size: 0.85rem; 
-  margin-bottom: 0.6rem; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+.tech-tag {
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--accent);
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
   font-weight: 500;
-  letter-spacing: 0.3px;
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  white-space: nowrap;
+}
+.tech-tag:hover {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
 }
