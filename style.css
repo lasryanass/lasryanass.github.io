@@ -76,12 +76,6 @@ li { margin-bottom: 0.4rem; }
   main { padding: 0 0.5rem; }
 }
 
-.tech-stack { 
-  color: var(--muted); 
-  font-size: 0.9rem; 
-  margin-top: 0.5rem; 
-  margin-bottom: 0.8rem;
-}
 code { 
   background: var(--border); 
   padding: 0.15rem 0.4rem; 
@@ -89,4 +83,12 @@ code {
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace; 
   font-size: 0.85rem; 
   color: var(--text);
+}
+
+.tech-tags { 
+  color: var(--accent); 
+  font-size: 0.85rem; 
+  margin-bottom: 0.6rem; 
+  font-weight: 500;
+  letter-spacing: 0.3px;
 }
