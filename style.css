@@ -36,11 +36,12 @@ body {
   background: var(--card); border: 1px solid var(--border); color: var(--muted);
   padding: 0.3rem 0.7rem; cursor: pointer; border-radius: 6px; font-weight: 500;
   transition: 0.2s; display: flex; align-items: center; justify-content: center;
+  width: 36px; height: 28px;
 }
 .lang-toggle button.active, .lang-toggle button:hover { 
   background: var(--accent); color: white; border-color: var(--accent); 
 }
-.flag-icon { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; }
+.flag-icon { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; display: block; }
 
 main { max-width: 900px; margin: 2rem auto; }
 section { margin-bottom: 2.5rem; }
@@ -50,7 +51,14 @@ h3 { font-size: 1.1rem; margin-bottom: 0.2rem; }
 ul { margin: 0.5rem 0 1rem 1.2rem; }
 li { margin-bottom: 0.4rem; }
 
-.job, .project-card, .edu { background: var(--card); padding: 1.2rem; border-radius: 8px; margin-bottom: 1.2rem; border: 1px solid var(--border); }
+.job, .project-card, .edu { 
+  background: var(--card); 
+  padding: 1.2rem; 
+  border-radius: 8px; 
+  margin-bottom: 1.2rem; 
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 .job span { color: var(--accent); font-weight: 400; }
 
 .github-btn {
@@ -86,24 +94,30 @@ code {
   color: var(--text);
 }
 
-.tech-tags { 
+.tech-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
-  margin-bottom: 0.8rem;
+  gap: 0.35rem;
+  margin-bottom: 0.9rem;
+  line-height: 1;
 }
 .tech-tag {
-  background: rgba(59, 130, 246, 0.12);
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(59,130,246,0.15), rgba(59,130,246,0.08));
   color: var(--accent);
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  border: 1px solid rgba(59, 130, 246, 0.4);
+  padding: 0.3rem 0.75rem;
+  border-radius: 9999px; /* Full pill */
+  font-size: 0.73rem;
+  font-weight: 600;
+  border: 1px solid rgba(59, 130, 246, 0.5);
   white-space: nowrap;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
 }
 .tech-tag:hover {
   background: var(--accent);
   color: white;
   border-color: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(59,130,246,0.3);
 }
